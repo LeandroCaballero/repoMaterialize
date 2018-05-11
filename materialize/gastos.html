@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title class="red.accent-1">Document</title>
+    <script language="javascript" type="text/javascript">
+        function enviar(pagina) {
+            document.nombreDelFormulario.action = pagina;
+            document.nombreDelFormulario.submit();
+        }
+    </script>
+
+    <title>The Materialize Selects Example</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect()();
+        });
+    </script>
+</head>
+
+<body style="background-color:#ef9a9a">
+
+    <br></br>
+    <div class="container">
+        <div class="row">
+            <div class="col m10 s7">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <div class="center">
+                            <h5>Situación Actual: $375</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col s4">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <input placeholder="Ingresar Gasto:" type="text">
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="col s6 ">
+                <form class="col s4">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <label></label>
+                            <select>
+                                <option value="" disabled selected>Categoría</option>
+                                <option value="1">Comida</option>
+                                <option value="2">Transporte</option>
+                                <option value="3">Diversión</option>
+                                <option value="4">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col s9">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <input placeholder="Descripción:" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s9">
+                <a class="waves-effect waves-light btn">
+                    <i class="material-icons left">save</i>Guardar</a>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col s9">
+                <a href="detallesGastos.html">
+                    <button button class="waves-effect waves-light btn-large" type="button" onClick="enviar('detalleGastos.html')">
+                        <i class="material-icons left">view_list</i>Detalles de Gastos
+                    </button>
+                </a>
+            </div>
+            <div class="col s6 offset-s9">
+                <a href="index2.html">
+                    <button button class="btn-floating btn-large waves-effect waves-light red" type="button" onClick="enviar('index.html')">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+
+</html>
